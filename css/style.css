@@ -14,9 +14,9 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
+  --bg-color: darkslategray;
+  --link-color: whitesmoke;
+  --link-hover-color: lightseagreen;
   --color-4: hotpink;
   --color-5: rebeccapurple;
 
@@ -27,15 +27,23 @@ use the fonts in other ways in the font hierarchy etc. */
   --white-space: 1rem;
 }
 
+.swatchgrid{
+    color:white;
+}
+.color-swatch-2{
+    color:black;
+}
+
 button {
-  transition: all 3s;
+  transition: all 0.3s;
 }
 a {
-  transition: all 3s;
+  transition: all 0.3s;
+
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.1);
 }
 
 button:active {
@@ -44,7 +52,7 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+
 }
 html {
   font-size: 100%;
@@ -151,21 +159,29 @@ ul li:last-child {
   margin-right: 5vw;
 }
 
+/*
 .texture-swatch-1 {
   background: url(../img/pw_maze_white.png) top left repeat;
 }
+*/
 
+
+
+/*
+.texture-swatch-1 {
+  background: url(../img/3.png);
+}
+*/
+
+/*
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
+  background: url(../img/2.png);
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
 }
-
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/4.png);
 }
+*/
 
 .images ul {
   flex-direction: column;
@@ -184,9 +200,9 @@ button {
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
+  font: bold  var(--primary-font);
   letter-spacing: 1px;
-  color: white;
+  color: Black;
   text-transform: uppercase;
   text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
@@ -195,7 +211,10 @@ button {
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--link-hover-color);
+}
+.secondary-button:hover {
+  background: var(--link-color);
 }
 
 button:focus,
@@ -236,7 +255,8 @@ em {
 
 a {
   font-family: var(--primary-font);
-  color: var(--link-color);
+/*  color: var(--link-color);*/
+     color:black;
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
@@ -257,6 +277,7 @@ p[class*="font-details-"] {
 
 .adjectives ul {
   flex-direction: column;
+
 }
 
 footer {
@@ -281,8 +302,10 @@ footer {
   }
 }
 
+/*
 @media (min-width: 900px) {
   .adjectives ul {
-    flex-direction: row;
+    flex-direction: coloumn;
   }
 }
+*/
